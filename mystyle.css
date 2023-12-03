@@ -1,0 +1,110 @@
+
+:root {
+  font-size: 62.5%; 
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.fotohome {
+  justify-content: center;
+  width: 49.5%;
+}
+
+.home1 {
+  margin-left: 4px;
+}
+
+.navbar-nav {
+  gap: 8rem;
+  margin: auto;
+}
+
+.SUV {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.fotosuv {
+  position: relative;
+  width: 100%; 
+  max-width: 600px; 
+  box-sizing: border-box;
+}
+
+.titels {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.figure-caption {
+  text-align: center;
+}
+
+.bodygids {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.model-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.model-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.model-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.model-title {
+  color: #333;
+}
+
+.model-description {
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    gap: 2rem;
+  }
+
+  .fotosuv {
+    max-width: 100%; 
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
