@@ -5,62 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mystyle.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="leafled.js">
+    <script src="leafled.js" ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script></head>
 <body>
-    <nav class="navbar navbar-expand navbar-light bg-light sticky-top">  
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto ">
-            <li class="nav-item active">
-              <a class="nav-link" href="Homepage.html">Homepagina <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="SUV.html">SUV</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Sedan.html">SEDAN</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="GIDS.html">GIDS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" > <img src="img/mercedes-nav.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top"></a>
-            </li>
+
+  <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light bg-light sticky-top">  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Homepage.html">Homepagina <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="overzichtpagina.html">Overzicht</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="SUV.html">SUV</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Sedan.html">SEDAN</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="GIDS.html">GIDS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  > <img src="img/mercedes-nav.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top"></a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+      <div id="map" style="width: 100%; height: 400px;"></div>
+      <script src="leafled.js"></script>
 
 
-          </ul>
-        </div>
-      </nav>
-      
-      <form>
-                
 
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Uw naam:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+<form>
+  <div class="form-group">
+    <label for="name" class="form-label">Uw naam:</label>
+    <textarea class="form-control" id="name" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="email" class="form-label">Uw email adres:</label>
+    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="subject" class="form-label">Uw onderwerp:</label>
+    <textarea class="form-control" id="subject" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="message" class="form-label">Uw boodschap:</label>
+    <textarea class="form-control" id="message" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-2">Verzenden</button>
+</form>
 
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Uw email adres:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Uw onderwerp:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Uw boodschap:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-      </form>
-      
       <footer class="text-center bg-body-tertiary">
         <!-- Grid container -->
         <div class="container pt-4">
@@ -75,7 +82,7 @@
               data-mdb-ripple-color="dark"
               ><i class="fab fa-facebook-f"></i
             ></a>
-      
+
             <!-- Twitter -->
             <a
               data-mdb-ripple-init
@@ -85,7 +92,7 @@
               data-mdb-ripple-color="dark"
               ><i class="fab fa-twitter"></i
             ></a>
-      
+
             <!-- Instagram -->
             <a
               data-mdb-ripple-init
@@ -95,12 +102,12 @@
               data-mdb-ripple-color="dark"
               ><i class="fab fa-instagram"></i
             ></a>
-    
+  
           </section>
           <!-- Section: Social media -->
         </div>
         <!-- Grid container -->
-      
+
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
             Volg ons op onze social media
@@ -109,6 +116,5 @@
         <!-- Copyright -->
       </footer>
 
-    
 </body>
 </html>
