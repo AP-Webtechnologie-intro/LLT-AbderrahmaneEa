@@ -1,0 +1,271 @@
+
+:root {
+  font-size: 62.5%; 
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.fotohome {
+  justify-content: center;
+  width: 49.5%;
+}
+
+.home1 {
+  margin-left: 4px;
+}
+
+.navbar-nav {
+  gap: 8rem;
+  margin: auto;
+}
+
+.SUV {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section.eigen-foto {
+  text-align: center; 
+  padding: 20px; 
+}
+
+section.eigen-foto img {
+  max-width: 250px; 
+  height: auto; 
+}
+
+.eigen-foto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+.tekst-bij-foto p {
+  font-size: 1.6rem; 
+  line-height: 1.8; 
+  color: #333; 
+  text-align: justify; 
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+
+}
+
+.tekst-bij-foto p:first-child {
+  margin-top: 0; 
+}
+
+.tekst-bij-foto p:last-child {
+  margin-bottom: 0; 
+}
+
+
+
+.fotosuv {
+  position: relative;
+  width: 100%; 
+  max-width: 600px; 
+  box-sizing: border-box;
+}
+
+.titels {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.figure-caption {
+  text-align: center;
+}
+
+.bodygids {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.model-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.model-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.model-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.model-title {
+  color: #333;
+}
+
+
+figcaption{
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+
+
+.photo-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.photo {
+  width: 45%;
+  margin: 10px;
+  text-align: center;
+}
+
+.fotooverzicht {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.titelmodellen{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  position: relative;
+  top:20px;
+  font-size:30px;
+  border-top: solid;
+  border-bottom: solid;
+}
+
+.titelmodel{
+  margin: 50px;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  height:50px;
+  font-family: copperplate Gothic;
+}
+.eerstehelft{
+  display: flex;
+  justify-content: flex-start;
+}
+.container-gegevens{
+  display: flex;
+}
+.geg{
+  justify-content: flex-start;
+}
+.titelgegevens, .antwoordgegevens{
+  margin-top: 25px;
+}
+.antwoordgegevens{
+  margin-left: 100px;
+}
+.titelgegevens{
+  margin-left: 190px;
+  color: gray;
+}
+.tittelfotos{
+  margin: 50px;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  height:50px;
+}
+.fotodeel{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.foto1, .foto3{
+  position: relative;
+  left:55px;
+}
+.fotos{
+  margin:20px;
+}
+.foto2 , .foto4{
+  position: relative;
+  left: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #444;
+}
+
+.btn-2{
+  background-color: black;
+}
